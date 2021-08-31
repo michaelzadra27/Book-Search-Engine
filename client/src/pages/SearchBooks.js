@@ -23,6 +23,8 @@ const SearchBooks = () => {
     return () => saveBookIds(savedBookIds);
   });
 
+  
+
   // create method to search for books and set state on form submit
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -80,7 +82,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-light bg-info'>
         <Container>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
